@@ -17,6 +17,7 @@
 		</div>
 		<div class="span8">
 			<form class="well" method="POST">
+				<input type="hidden" name="submit" value="1" />
 				<?php
 					if (isset($error)) {
 				?>

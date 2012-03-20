@@ -18,7 +18,8 @@
 		
 		public function index() {
 			$data=array();
-			if (!empty($_POST)) {
+			$submit=$this->input->post("submit");
+			if (!empty($submit)) {
 				$result=$this->submit();
 				if (!empty($result["error"])) {
 					$data=$result;
